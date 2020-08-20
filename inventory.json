@@ -1,0 +1,11 @@
+{
+    "devices": [
+        {
+            "hostname": "r01",
+            "ip_address": "172.27.0.4",
+            "port": 3333,
+            "username": "tomas",
+            "password": "tomas123"
+        }
+    ]
+}

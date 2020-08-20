@@ -1,0 +1,22 @@
+module: openconfig-interfaces
+  +--rw interfaces
+     +--rw interface* [name]
+        +--rw name             -> ../config/name
+        +--rw config
+        |  +--rw name?            string
+        |  +--rw type             identityref
+        |  +--rw mtu?             uint16
+        |  +--rw loopback-mode?   boolean
+        |  +--rw description?     string
+        |  +--rw enabled?         boolean
+        +--rw hold-time
+        |  +--rw config
+        |  |  +--rw up?     uint32
+        |  |  +--rw down?   uint32
+        +--rw subinterfaces
+           +--rw subinterface* [index]
+              +--rw index     -> ../config/index
+              +--rw config
+                 +--rw index?         uint32
+                 +--rw description?   string
+                 +--rw enabled?       boolean
